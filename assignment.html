@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Ass</title>
+	<script type="text/javascript">
+		function cal(){
+			num1=parseInt(document.mainForm.textBox1.value)
+			num2=parseInt(document.mainForm.textBox2.value)
+			result=num1*num2;
+			value1=parseInt(document.mainForm.textBox3.value)
+			value2=parseInt(document.mainForm.textBox4.value)
+			result1=value1*value2;
+			total=result/result1;
+			document.mainForm.textBoxresult.value=total;
+			total+=total*0.05;
+			document.mainForm.textBoxresult1.value=Math.ceil(total);
+
+		}
+	</script>
+</head>
+<body>
+	<form name="mainForm">
+		<label>Enter Room With:</label>
+		<input type="text" name="textBox1"/><br>
+		<label>Enter Room Height:</label>
+		<input type="text" name="textBox2"/><br>
+		<label>Enter With</label>
+		<input type="text" name="textBox3"/><br>
+		<label>Enter Height:</label>
+		<input type="text" name="textBox4"/><br>
+		<input type="button" value="Calculate" onclick="cal()"/><br>
+		<input type="text" name="textBoxresult" readonly="readonly"><br>
+		<input type="text" name="textBoxresult1" readonly="readonly">
+
+
+	</form>
+
+</body>
+</html>

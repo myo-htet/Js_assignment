@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment2</title>
+	<script type="text/javascript">
+		let no=14;
+		let correct=false;
+		let i=1;
+		do{
+			let guess_no=prompt("Guess the number:");
+			if(no==guess_no){
+			correct=true;
+			alert=("Correct");
+			alert("guessed"+i+"times");
+		}else if(guess_no<no){
+			alert("Lower");
+		}else if(guess_no>no){
+			alert("Higher");
+		}
+		i++;
+	}while(!correct)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
